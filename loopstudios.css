@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: 40%;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+@media screen and (max-width: 48rem) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+.header {
+  width: 100vw;
+  background-image: url(images/image-hero.jpg);
+  height: 100vh;
+  background-position: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 48rem) {
+  .header {
+    background-image: url(images/mopile-design.jpg);
+  }
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem;
+  color: white;
+}
+@media screen and (max-width: 48rem) {
+  .heading {
+    padding: 5rem;
+  }
+}
+.menu {
+  position: absolute;
+  top: 6%;
+  right: 10%;
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .menu {
+    display: block;
+  }
+}
+.logo {
+  font-family: "Alata", sans-serif;
+  font-weight: bolder;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  font-family: "Alata", sans-serif;
+  margin-right: 5rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 48rem) {
+  ul {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+a:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 1rem;
+}
+li {
+  padding-right: 1.5rem;
+}
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  border: 1px solid white;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  color: white;
+  padding: 3rem;
+  font-size: 7rem;
+  line-height: 7rem;
+  font-weight: lighter;
+}
+@media screen and (max-width: 48rem) {
+  h2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+  }
+}
+.midContainer {
+  position: relative;
+  margin: 10%;
+  width: 100vw;
+  height: fit-content;
+}
+@media screen and (max-width: 48rem) {
+  .midContainer {
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .midContainer img {
+    width: 50rem;
+  }
+  .midContainer__image {
+    align-items: center;
+  }
+}
+.midContainer__description {
+  background: white;
+  border: 1px solid white;
+  padding: 10rem;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  height: 40rem;
+}
+@media screen and (max-width: 48rem) {
+  .midContainer__description {
+    width: 50rem;
+    padding: 5rem 2rem 0rem 2rem;
+    position: initial;
+    text-align: center;
+    height: fit-content;
+  }
+}
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+.midContainer__description p {
+  color: hsl(0, 0%, 55%);
+  font-family: "Alata", sans-serif;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 48rem) {
+  .midContainer__description p {
+    font-size: 1.5rem;
+  }
+}
+.creations {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: space-between;
+  padding: 0 12rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 3rem;
+}
+h4 {
+  font-size: 3.2rem;
+  font-weight: lighter;
+}
+@media screen and (max-width: 48rem) {
+  .creations {
+    display: inline;
+    text-align: center;
+  }
+  h4 {
+    margin-bottom: 2rem;
+    margin-left: auto;
+  }
+}
+button {
+  width: 12rem;
+  height: 3rem;
+  background: black;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: lighter;
+}
+@media screen and (max-width: 48rem) {
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.desktop {
+  margin: 9%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  .desktop {
+    display: none;
+  }
+}
+.box {
+  position: relative;
+}
+.box img {
+  margin-bottom: 1rem;
+}
+.box p {
+  font-family: "Josefin Sans", sans-serif;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: white;
+  font-size: 3rem;
+}
+.mopile {
+  display: none;
+}
+@media screen and (max-width: 48rem) {
+  .mopile {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+  .mopile img {
+    display: block;
+    width: 50rem;
+    margin: 3% auto;
+  }
+  .box p {
+    bottom: 20%;
+    left: 20%;
+  }
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 3rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact {
+  margin: 1.5rem 3.5rem;
+}
+.contact img {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 48rem) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  footer ul {
+    display: inline;
+    text-align: center;
+    flex-direction: column;
+  }
+  ul li {
+    padding-bottom: 1rem;
+  }
+  .logo {
+    padding-bottom: 2rem;
+  }
+}
